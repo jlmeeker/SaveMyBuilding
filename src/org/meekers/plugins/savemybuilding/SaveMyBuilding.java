@@ -40,7 +40,7 @@ public class SaveMyBuilding extends JavaPlugin {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("sms")) {
+        if (cmd.getName().equalsIgnoreCase("smb")) {
             Player player = Bukkit.getPlayer(sender.getName());
             Location ploc = player.getLocation();
             World pworld = player.getWorld();

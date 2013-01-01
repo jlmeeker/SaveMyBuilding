@@ -5,6 +5,6 @@ author: Jared Meeker
 description: Save your creations and load them into a new world
 
 commands:
-   sms:
+   smb:
       description: Interface for saving your buildings
       usage: /<command> [ list | save | load ]
