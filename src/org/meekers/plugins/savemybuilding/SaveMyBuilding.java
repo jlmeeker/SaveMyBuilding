@@ -9,7 +9,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
@@ -260,12 +259,6 @@ public class SaveMyBuilding extends JavaPlugin {
             }
             if (newblock.getTypeId() != blockType) {
                 newblock.setTypeIdAndData(blockType, blockData, false);
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(SaveMyBuilding.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                player.sendBlockChange(newblock.getLocation(), Material.getMaterial(blockType), blockData);
             }
         }
         if (lastBlocks.size() > 0) {
