@@ -12,7 +12,6 @@ class SaveMyBuildingPluginListener implements Listener {
 
     public SaveMyBuildingPluginListener(SaveMyBuilding plugin) {
         this.plugin = plugin;
-        //this.plugin.getServer().getPluginManager().registerEvents(this, plugin);
     }
     
 }
